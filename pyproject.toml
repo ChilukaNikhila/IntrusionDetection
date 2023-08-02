@@ -1,0 +1,30 @@
+# This is a TOML document.
+
+title = "Network Intrusion Detection"
+
+[owner]
+name = "Nikhila Chiluka"
+dob = 1999-04-05 # First class dates
+
+[data]
+
+  # Indentation (tabs and/or spaces) is allowed but not required
+  [data.paths]
+  dataset = "data/data.csv"
+  correlation_results = "outputs/correlation_results.npy"
+  features_std = "outputs/features_std.npy"
+  features_scores = "outputs/features_scores.npy"
+  selected_columns = "outputs/selected_columns.npy"
+  selected_features = "outputs/selected_features.npy"
+  model_test_results = "outputs/model_test_results.txt"
+  models_comparision = "figs/models_comparision.png"
+  ensemble_test_results = "outputs/ensemble_test_results.txt"
+  ensembles_comparision = "figs/ensembles_comparision.png"
+  model_validation = "outputs/model_validation.txt"
+  heatmap1 = "figs/heatmap1.png"
+  heatmap2 = "figs/heatmap2.png"
+  training_accuracy_models = "figs/training_accuracy_models.png"
+  testing_accuracy_models = "figs/testing_accuracy_models.png"
+  training_ensembles_accuracies = "figs/training_ensembles_accuracies.png"
+  testing_ensembles_accuracies = "figs/testing_ensembles_accuracies.png"
+  pipeline = "outputs/pipeline.pkl"
