@@ -1,5 +1,4 @@
-#question1
-
+# Overview of the project 
 Dataset:The dataset used in this project is NSL-KDD dataset. It is a standard dataset to train intrusion detection system and make it ready for serving its purpose in network security.
 -The main task is to select a best model for choosing whether the network is under attack or not. 
 -The following tasks are done on the data set
