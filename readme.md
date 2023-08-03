@@ -1,31 +1,29 @@
 # Overview of the project 
-Dataset:The dataset used in this project is NSL-KDD dataset. It is a standard dataset to train intrusion detection system and make it ready for serving its purpose in network security.
--The main task is to select a best model for choosing whether the network is under attack or not. 
--The following tasks are done on the data set
-##Data Cleaning: Data is cleaned by mapping all the attacks under four attacks which are DoS, Probe, R2L, U2R  
-##Exploratory data analysis
-##feature selection:Selecting the Best and minimal number of features from the data set.
-##Data Preparation for Modelling :Making Data Ready for Model Training & Testing
-##Model Building for LogisticRegression, KNeighborsClassifier, DecisionTreeClassifier,SVM, Naive Bayes
-##After the models are trained the test results are compared among the different models
-##Different ensembles are trained and the results are compared.The esembles I used are XGB,Randomforest, Adaboost.
-##After the models are trained, and performances are compared, best model is choosed.
-##After the model is selecyed ,parameters tuning is done for the selected model
-##Model Validation & Evaluation is done after the best parameters are selected.
-##Then testing is done on the pipeline to check how well the predictions are done.
+The dataset used in this project is NSL-KDD dataset. It is a standard dataset to train intrusion detection system and make it ready for serving its purpose in network security. The main task is to select a best model for choosing whether the network is under attack or not. 
 
+The following tasks are done on the data set
+Data Cleaning: Data is cleaned by mapping all the attacks under four attacks which are DoS, Probe, R2L, U2R  
+Exploratory data analysis
+feature selection:Selecting the Best and minimal number of features from the data set.
+Data Preparation for Modelling :Making Data Ready for Model Training & Testing
+Model Building for LogisticRegression, KNeighborsClassifier, DecisionTreeClassifier,SVM, Naive Bayes
+After the models are trained the test results are compared among the different models
+Different ensembles are trained and the results are compared.The esembles I used are XGB,Randomforest, Adaboost.
+After the models are trained, and performances are compared, best model is choosed.
+After the model is selecyed ,parameters tuning is done for the selected model
+Model Validation & Evaluation is done after the best parameters are selected.
+Then testing is done on the pipeline to check how well the predictions are done.
 
-#question2
-
-##Dataset Description
+## Dataset Description
 The dataset used in this project is NSL-KDD dataset. It is a standard dataset to train intrusion detection system and make it ready for serving its purpose in network security.
 
-##Total number ofsamples
+## Total number ofsamples
 The data set consists 494020 records
 
-##Total number of measurements
+## Total number of measurements
 It has 42 features out of which 41 features describe different parameters of the data traffic and the last feature is the label which specifies whether it is normal data packet or malicious data packet 
-##Description of the measurements
+
+## Description of the measurements
 
 Following are the different columns in the data set
 Duration: It is the description of the amount of time spent for the connection. This field takes integers.
@@ -68,11 +66,11 @@ Dst_host_srv_serror_rate: It gives the percentage of connections that activated 
 Label: It gives the information about the classification of the input network traffic. It takes string value, 
 
 
-##Nature of the group of interest 
+## Nature of the group of interest 
 My group of interest is normal network from label column which are denoted by 1.
 This set of group gives the status of network attack
 
-##Nature of the group of not interest
+## Nature of the group of not interest
 My group of not interest is network under attack which is denoted by 0. 
 
 As salary has null values, the coulmn is dropped.
@@ -95,7 +93,7 @@ Here, difference means the absolute difference between AUC_SCORES and 0.5
 By using difference the auc values are sorted farthest from (0.5).
 
 
-#Question3
+
 
 ##Dataset
 The dataset used in this project is NSL-KDD dataset. It is a standard dataset to train intrusion detection system and make it ready for serving its purpose in network security. The dataset consists of most of the attacks over the internet and has a detailed information about each type of attack.
@@ -148,32 +146,34 @@ Sub-categories of R2L in the dataset
 
 ##Features in dataset:A total of 42 features are present in the dataset, out of which 41 features describe the details of the network traffic and the type of data. The last feature is a label that tells whether the network traffic is an attack or normal traffic.
 
-##Data Cleaning
+## Data Cleaning
 
 Data must be cleaned to improve the quality of Data. The Data Cleaning steps that are considered for the data is. 
 
 1.	Mapping the attack classes. As there are subcategories of attack classes, they are mapped to the main category (Main classes are DoS, U2R, Probe, R2L)
 2.	Dropping irrelevant columns: num_outbound_cmds' field has all 0 values. Hence, it will be removed from both train and test dataset since it is a redundant field.
 
-##Exploratory Data Analysis (EDA):
+## Exploratory Data Analysis (EDA):
 Exploratory data analysis is performed to ensure that the data that is given to the model is valid and is compatible with the type of machine learning algorithm used in developing the model. It helps the model predict with greater accuracy.
 
-###Data statistics:Many statistic features can be derived from the features in the dataset in order to facilitate better understanding of the dataset to train the model perfectly. In the case of numerical attributes various statistics like mean, standard deviation, count etc. can be evaluated. These calculated statistics can be used by the machine learning model to extract useful information from the features and use it to form specific patterns or rules for predicting output
-###Data Visualization: Some features can be better understood if they analyzed visually rather than dealing with pure numerical values. The redundant features or columns are removed from training and test dataset. The attack class is visualized, and the graph of attack classes is plotted
+### Data statistics:
+Many statistic features can be derived from the features in the dataset in order to facilitate better understanding of the dataset to train the model perfectly. In the case of numerical attributes various statistics like mean, standard deviation, count etc. can be evaluated. These calculated statistics can be used by the machine learning model to extract useful information from the features and use it to form specific patterns or rules for predicting output
+## Data Visualization: 
+Some features can be better understood if they analyzed visually rather than dealing with pure numerical values. The redundant features or columns are removed from training and test dataset. The attack class is visualized, and the graph of attack classes is plotted
 
-##DATA CORRELATION
+## DATA CORRELATION
 A correlation coefficient is an approach to put worth to the relationship. Relationship coefficients have a worth of between - 1 and 1. A "0" signifies there is no connection between the factors by any stretch of the imagination, while - 1 or 1 implies that there is an ideal negative or positive relationship
 
-##FEATURE SELECTION & DATA PREPARATION FOR MODELLING
+## FEATURE SELECTION & DATA PREPARATION FOR MODELLING
 All the features present in the dataset may not be necessary to predict the correct output. Some features can be removed from the dataset so that processing the dataset will become much easier and training the model will take less time. Feature selection solves this problem by analyzing the dataset thoroughly and with exploratory data analysis the user can select some of the many features from the dataset that contribute more to predict the output
 feature selection algorithm identifies the features which are most important, and which have high contribution in predicting the output. These features are selected, and the model is instructed to give much more priority to these selected features.The plot helps to analyse easily, to select the best features.(heatmap1.png,heatmap2.png)
-###Feature Selection for The Data:
+### Feature Selection for The Data:
 After EDA, we have removed highly correlated features and selected Best Features using Chi Square Feature Selection
 
-###Data Preparation for Modelling               
+### Data Preparation for Modelling               
 After Feature Selection, we have extracted the dataset with new features, applied Standardization to the data.  We have used Min Max scaler to Standardize the data. Data is being split into 67% and 33% for training and testing, respectively.  This prepared data is sent for Model Building     
 
-##MODEL BUILDING, VALIDATION & EVALUATION
+## MODEL BUILDING, VALIDATION & EVALUATION
 The Prepared Data is being used for Modelling. Here Data is Trained and Tested with various classifiers to filter out best Model which fits the data and predicts the attack behaviour according to our objective.
 Classifiers Used:  Logistic, KNN, Decision Tree, SVM, Naïve Bayes.
 testing_accuracy_models.png and training_accuracy_models.png gives the comparison between different models
@@ -183,7 +183,7 @@ testing_ensembles_models.png and training_ensembles_models.png gives the compari
 The results are validated and evaluated from models_comparison.png,ensemble_models_comparison.png.
 So from the observations these two png files,by observing the testing and training scores,precision and recall of all classifiers, Decision tree is efficient than other models to this dataset(we require good accuarcy ,high precision and recall,so area under the curve is high ).
 
-##HYPERPARAMETER TUNING
+## HYPERPARAMETER TUNING
 
 hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are learned.
 
