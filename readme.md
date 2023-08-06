@@ -28,26 +28,16 @@ Then testing is done on the pipeline to check how well the predictions are made.
 ## Dataset Description
 <div align="justify">The dataset consists of most of the attacks over the internet and has a detailed information about each type of attack. The dataset consists of a total of 125974 records of information related to data packets in the network traffic. It has 42 features out of which 41 features describe different parameters of the data traffic and the last feature is the label which specifies whether it is normal data packet or malicious data packet. </div>
 
-The attacks specified in the dataset fall under four categories of attack types:
-# Denial of service(DoS)
-# User to root(U2R)
-# Remote tolocal(R2L)
-# Probe
+The attacks specified in the dataset fall under four categories of attack types which are Denial of service(DoS), User to root(U2R), Remote tolocal(R2L), Probe
 
-DoS:Denial of service is not able to provide response to the requests made by the clients.Sub-categories of DoS in the dataset are neptune, pod, smurf,apache2,
+DoS: Denial of service is not able to provide response to the requests made by the clients.Sub-categories of DoS in the dataset are neptune, pod, smurf,apache2,
 udpstorm, back, teardrop.
 
-U2R:When the attacker gains access to root permissions he/she can modify the system software configurations, steal confidential information, make the system look malicious in the network in which it resides, alter the encryption algorithms in the system root level etc. Sub-categories of U2R in the dataset are load module, perl, buffer overflow, SQL attack, rootkit, xterm, ps.
+U2R: When the attacker gains access to root permissions he/she can modify the system software configurations, steal confidential information, make the system look malicious in the network in which it resides, alter the encryption algorithms in the system root level etc. Sub-categories of U2R in the dataset are load module, perl, buffer overflow, SQL attack, rootkit, xterm, ps.
 
-R2L:In this type of attack, access to host computer is gained by the attacker. Sub-categories of R2L in the dataset are ftp_write, guess_passwd, imap, multihop, sendmail, spy, snmpguess, warezclient, warezmaster.
+R2L: In this type of attack, access to host computer is gained by the attacker. Sub-categories of R2L in the dataset are ftp_write, guess_passwd, imap, multihop, sendmail, spy, snmpguess, warezclient, warezmaster.
 
-Probe:Probe attack is also known as site scanning attack. Sub-categories of Probe in the dataset are ipsweep, mscan, nmap, saint, satan, portsweep.</div>
-
-## Total number ofsamples
-The data set consists 494020 records
-
-## Total number of measurements
-It has 42 features out of which 41 features describe different parameters of the data traffic and the last feature is the label which specifies whether it is normal data packet or malicious data packet 
+Probe: Probe attack is also known as site scanning attack. Sub-categories of Probe in the dataset are ipsweep, mscan, nmap, saint, satan, portsweep.</div>
 
 ## Description of the measurements
 
